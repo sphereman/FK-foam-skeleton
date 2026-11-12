@@ -30,6 +30,8 @@ Edge bevel	0.10 mm	bevel width of all edges except the port and end triangles
 End inset	0.05 mm	inset depth of the hexagonal end faces
 Subdivision	2	Catmull-Clark subdivision level
 Border fill	0.60	minimum fraction of a cell's vertices that must be inside the shape
+<img width="1929" height="732" alt="image" src="https://github.com/user-attachments/assets/66af6054-4932-42fb-9226-b1f05b266ae7" />
+
 
 # How it works
 1. Cells — the A15 (Cr₃Si) lattice, eight equal-volume Laguerre cells per cubic unit cell: two 12-faced (dodecahedra) and six 14-faced (tetrakaidecahedra).
