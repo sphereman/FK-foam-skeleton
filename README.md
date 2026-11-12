@@ -18,34 +18,41 @@ No boolean, no voxel remesh — the A15 cells are filtered against the shape and
 
 That is the whole workflow — the panel is a single screen:
 
-node size        ── arm length of the tetrahedron node
+  node size        ── arm length of the tetrahedron node
 
-node chamfer     ── chamfer of the tetrahedron corners
+  node chamfer     ── chamfer of the tetrahedron corners
 
-edge bevel       ── edge bevel width (1 segment)
+  edge bevel       ── edge bevel width (1 segment)
 
-end inset        ── inset depth of the hexagonal end faces
+  end inset        ── inset depth of the hexagonal end faces
 
-subdivision      ── Catmull-Clark levels
+  subdivision      ── Catmull-Clark levels
 
-border fill      ── how much of a boundary cell must be inside the shape
+  border fill      ── how much of a boundary cell must be inside the shape
 
-shape            ── cube / sphere / cylinder / use selected
+  shape            ── cube / sphere / cylinder / use selected
 
-source cells     ── A15 lattice size used to seed the graph
+  source cells     ── A15 lattice size used to seed the graph
 
-[ Build foam skeleton ]
+  [ Build foam skeleton ]
 
 If nothing is selected as a shape, the build is refused with a warning (Please select a source shape first) instead of an error. If FK_Foam_Edges is missing it is created automatically.
 
 # Parameters
 Parameter	Default	Meaning
+
 Node size	1.20 mm	arm length of the node tetrahedron
+
 Node chamfer	0.80 mm	chamfer cut on the tetrahedron corners
+
 Edge bevel	0.10 mm	bevel width of all edges except the port and end triangles
+
 End inset	0.05 mm	inset depth of the hexagonal end faces
+
 Subdivision	2	Catmull-Clark subdivision level
+
 Border fill	0.60	minimum fraction of a cell's vertices that must be inside the shape
+
 <img width="1929" height="732" alt="image" src="https://github.com/user-attachments/assets/66af6054-4932-42fb-9226-b1f05b266ae7" />
 
 
