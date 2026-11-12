@@ -4,11 +4,11 @@ No boolean, no voxel remesh — the A15 cells are filtered against the shape and
 <img width="1303" height="1307" alt="QQ_1794447229832" src="https://github.com/user-attachments/assets/a72f8bb9-7fda-4cef-ad9a-d9cb330ecf95" />
 
 # Quick start
-Install — Edit ▸ Preferences ▸ Add-ons ▸ Install… → pick fk_foam_addon.zip → tick FK Foam Skeleton.
-Open the panel — in the 3D View press N and switch to the FK Foam tab.
-Pick a shape — click Cube, Sphere or Cylinder, or select any mesh in the scene and press Use selected.
-Build — press Build foam skeleton. The lattice object FK_Node_Network appears, clipped to your shape.
-Tune — drag the sliders. Every value rebuilds the model immediately; the Subdivision slider is a live modifier, so it is completely free to change.
+· Install — Edit ▸ Preferences ▸ Add-ons ▸ Install… → pick fk_foam_addon.zip → tick FK Foam Skeleton.
+· Open the panel — in the 3D View press N and switch to the FK Foam tab.
+· Pick a shape — click Cube, Sphere or Cylinder, or select any mesh in the scene and press Use selected.
+· Build — press Build foam skeleton. The lattice object FK_Node_Network appears, clipped to your shape.
+· Tune — drag the sliders. Every value rebuilds the model immediately; the Subdivision slider is a live modifier, so it is completely free to change.
 That is the whole workflow — the panel is a single screen:
 node size        ── arm length of the tetrahedron node
 node chamfer     ── chamfer of the tetrahedron corners
