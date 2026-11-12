@@ -74,9 +74,13 @@ Border fill	0.60	minimum fraction of a cell's vertices that must be inside the s
 
 # Files
 fk_foam_addon/
+
   __init__.py    panel, operators, A15 source graph
+  
   fk_geom.py     A15 lattice and Laguerre cells
+  
   fk_nodes.py    tetrahedron nodes, bridges, legs, bevel, inset
+  
+  fk_shape.py    cell filtering inside the shape, edge graph extraction
 
 Dependency: numpy only (ships with Blender). Tested on Blender 5.2, requires 4.2+.
-  fk_shape.py    cell filtering inside the shape, edge graph extraction
