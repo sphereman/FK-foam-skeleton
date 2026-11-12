@@ -1,7 +1,9 @@
 # FK Foam Skeleton — Blender add-on
 Generate Frank–Kasper (A15 / Weaire–Phelan) foam-metal skeletons inside an arbitrary closed shape: a cube, a sphere, a cylinder, or any mesh you already have in the scene.
+
 No boolean, no voxel remesh — the A15 cells are filtered against the shape and the Frank–Kasper edge graph is turned into the skeleton directly.
-<img width="1303" height="1307" alt="QQ_1794447229832" src="https://github.com/user-attachments/assets/a72f8bb9-7fda-4cef-ad9a-d9cb330ecf95" />
+
+<img width="800" height="800" alt="QQ_1794447229832" src="https://github.com/user-attachments/assets/a72f8bb9-7fda-4cef-ad9a-d9cb330ecf95" />
 
 # Quick start
 · Install — Edit ▸ Preferences ▸ Add-ons ▸ Install… → pick fk_foam_addon.zip → tick FK Foam Skeleton.
@@ -15,14 +17,23 @@ No boolean, no voxel remesh — the A15 cells are filtered against the shape and
 · Tune — drag the sliders. Every value rebuilds the model immediately; the Subdivision slider is a live modifier, so it is completely free to change.
 
 That is the whole workflow — the panel is a single screen:
+
 node size        ── arm length of the tetrahedron node
+
 node chamfer     ── chamfer of the tetrahedron corners
+
 edge bevel       ── edge bevel width (1 segment)
+
 end inset        ── inset depth of the hexagonal end faces
+
 subdivision      ── Catmull-Clark levels
+
 border fill      ── how much of a boundary cell must be inside the shape
+
 shape            ── cube / sphere / cylinder / use selected
+
 source cells     ── A15 lattice size used to seed the graph
+
 [ Build foam skeleton ]
 
 If nothing is selected as a shape, the build is refused with a warning (Please select a source shape first) instead of an error. If FK_Foam_Edges is missing it is created automatically.
