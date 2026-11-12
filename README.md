@@ -65,8 +65,11 @@ Border fill	0.60	minimum fraction of a cell's vertices that must be inside the s
 
 # Notes and limitations
 · Cells stay complete, so a thin irregular gap remains between the outermost cells and the surface — tune it with Border fill (0.6 is the default; higher is more conservative).
+
 · Large shapes (90 mm or more) take 10–20 s to rebuild. Set Subdivision to 0 while tuning parameters and back to 2 for the final look.
+
 · For custom shapes, a closed mesh gives the best result; open meshes are handled but the boundary becomes ragged.
+
 · The camera and lights are not adapted automatically for very large shapes.
 
 # Files
